@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/primary"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:id="@+id/more"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription='menu'
+                android:src="@drawable/baseline_menu_white_60" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Inbox"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <ImageButton
+                android:id="@+id/search"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription='menu'
+                android:src="@drawable/baseline_search_white_60" />
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/gmailList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+    </LinearLayout>
+
+
+</LinearLayout>

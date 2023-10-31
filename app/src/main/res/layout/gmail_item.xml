@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="60dp"
+    android:background="@color/white"
+    android:gravity="center"
+    android:paddingTop="5dp"
+    android:paddingBottom="8dp"
+    >
+
+    <TextView
+        android:id="@+id/avt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/circle_drawable"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+
+        android:text="E"
+        android:textColor="#ff2800"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/title_gmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18dp"
+                android:textFontWeight="@integer/material_motion_duration_medium_1"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/time_gmail"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:textFontWeight="@integer/material_motion_duration_short_2"
+                android:text="12:40 PM" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/content_gmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="10dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text="Yêu cầu nộp bài:
+     + Link mã nguồn GitHub
+    + Ảnh chụp màn hình chạy thử
+    Hạn nộp bài đến hết ngày 01/11/2023
+    .Sinh viên lập trình ứng dụng sử dụng ListView
+    để tạo danh sách giống với giao diện ứng dụng Gmail trong file đính kèm" />
+            <ImageButton
+                android:id="@+id/star_gmail"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription='star'
+                android:layout_gravity="bottom"
+                android:src="@drawable/baseline_star_border_16" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
